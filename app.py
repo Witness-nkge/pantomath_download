@@ -1,31 +1,32 @@
 import streamlit as st
 from PIL import Image
 
-image = Image.open('C:\\Users\\witness nkge\\Pictures\\icon.png')
-st.image(image)
+st.image(Image.open('icon.png'))
 
-st.title('Download Pantomath')
+st.title('Pantomath')
 
-st.header('Introduction')
-st.write('''Pantomath is an android application developed by software mavens at Maven.\n\nThe fouder of the app witness nkge
-, cant really ellaborate on the idea behind the app or what the app is all about but what he can conclude is that Pantomath
-does things for English studends.\nPantomath contain cognitive functions that can absolutely write essays
-, answer comprehension questions, summarize text for you and also it provides english lanuage tolbox for learning.''')
+st.write('''Pantomath is an android application developed by software mavens
+ which can be used by students to get help in aswering comprehesion
+ questions etc
+ 
+ The app uses cognitive function that can answer questions for you based
+ on the context you provided. The context can be from a book, comprehension or anything''')
 
-st.header('App snippets')
-image1 = Image.open(image_main)
-image2 = Image.open(Image_answer)
-image3 = Image.open(summary)
-image4 = Image.open(language)
+st.header("Usage")
+st.write('''CONTEXT
 
-st.image(image1)
-st.image(image2)
-st.image(image3)
-st.image(image4)
+It can be uploaded as an image document , e.g a picture containing a context from
+the comprehesion you want to ask questions based on.
 
-st.info('to learn more on how you can use pantomath for your English studies visit our facebook page @WMaven')
+Or you can type it manually on the  'input context'  field
 
+After you can type in a question then hit answer button to get answers''')
 
+st.header('App snippet')
+st.image(Image.open('image.png'))
+st.info('''to learn more about Pantomath visit our facebook page @WMaven
+
+click the below button to download pantomath''')
 st.download_button( 
 
     label="Download Pantomath",
