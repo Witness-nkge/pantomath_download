@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 
-st.image(Image.open(icon.png))
+st.image(Image.open('icon.png'))
 
 st.title('Pantomath')
 
@@ -23,7 +23,7 @@ Or you can type it manually on the  'input context'  field
 After you can type in a question then hit answer button to get answers''')
 
 st.header('App snippet')
-st.image(Image.open(image.png))
+st.image(Image.open('image.png'))
 st.info('''to learn more about Pantomath visit our facebook page @WMaven
 
 click the below button to download pantomath''')
@@ -31,7 +31,7 @@ st.download_button(
 
     label="Download Pantomath",
 
-    data= app-release.apk,
+    data= 'app-release.apk',
 
     file_name='Pantomath.apk',
 
